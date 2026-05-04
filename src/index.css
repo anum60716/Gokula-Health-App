@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap');
+
+@theme {
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Rural Professionalism Palette */
+  --color-background: #141318;
+  --color-surface: #141318;
+  --color-surface-dim: #141318;
+  --color-surface-bright: #3a383e;
+  --color-surface-container-lowest: #0f0d13;
+  --color-surface-container-low: #1c1b20;
+  --color-surface-container: #201f24;
+  --color-surface-container-high: #2b292f;
+  --color-surface-container-highest: #36343a;
+  
+  --color-on-surface: #e6e1e9;
+  --color-on-surface-variant: #cac4d2;
+  
+  --color-primary: #cfbdff;
+  --color-on-primary: #371e72;
+  --color-primary-container: #9a83db;
+  --color-on-primary-container: #30166b;
+  
+  --color-secondary: #cdc0e8;
+  --color-on-secondary: #342b4b;
+  --color-secondary-container: #4d4465;
+  --color-on-secondary-container: #beb3da;
+  
+  --color-tertiary: #e7c365;
+  --color-on-tertiary: #3e2e00;
+  --color-tertiary-container: #91731d;
+  
+  --color-error: #ffb4ab;
+  --color-outline: #948e9c;
+  --color-outline-variant: #494551;
+
+  /* Role specific colors */
+  --color-vendor-green: #2E7D32;
+  --color-customer-blue: #1565C0;
+  --color-vendor-orange: #E65100;
+  --color-star-gold: #FFB800;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
